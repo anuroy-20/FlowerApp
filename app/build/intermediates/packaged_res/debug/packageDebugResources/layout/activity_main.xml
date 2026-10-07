@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Header Banner -->
+    <LinearLayout
+        android:id="@+id/headerBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/rose_red"
+        android:padding="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="28dp">
+
+        <TextView
+            android:text="🌸 Flora Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSelectedColorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose Red Theme"
+            android:textSize="14sp"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Color Picker Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:text="SELECT A COLOR THEME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_secondary"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="14dp" />
+
+                    <!-- Row 1: 3 colors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="12dp">
+
+                        <!-- Rose Red -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorRoseRed"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/rose_red" />
+                            <TextView
+                                android:text="Rose Red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+
+                        <!-- Lavender -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorLavender"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/lavender" />
+                            <TextView
+                                android:text="Lavender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+
+                        <!-- Sunflower -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorSunflower"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/sunflower" />
+                            <TextView
+                                android:text="Sunflower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Row 2: 3 colors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <!-- Ocean Blue -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorOceanBlue"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/ocean_blue" />
+                            <TextView
+                                android:text="Ocean Blue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+
+                        <!-- Emerald -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorEmerald"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/emerald" />
+                            <TextView
+                                android:text="Emerald"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+
+                        <!-- Coral -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <View
+                                android:id="@+id/colorCoral"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/circle_color"
+                                android:backgroundTint="@color/coral" />
+                            <TextView
+                                android:text="Coral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="6dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Flowers Section Label -->
+            <TextView
+                android:text="FLOWERS IN THIS COLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:letterSpacing="0.1"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="4dp" />
+
+            <!-- Flower RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFlowers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

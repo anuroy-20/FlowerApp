@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Emoji Icon Box -->
+        <TextView
+            android:id="@+id/tvFlowerEmoji"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="🌹"
+            android:background="@drawable/rounded_icon_bg" />
+
+        <!-- Text Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp">
+
+            <TextView
+                android:id="@+id/tvFlowerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red Rose"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvFlowerDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Symbol of love and passion"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tvFlowerFact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to learn more →"
+                android:textSize="11sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- Color dot indicator -->
+        <View
+            android:id="@+id/viewColorDot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/circle_color"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

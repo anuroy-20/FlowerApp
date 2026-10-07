@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App base colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#F8F9FA</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#888888</color>
+
+    <!-- Flower theme colors -->
+    <color name="rose_red">#E8304A</color>
+    <color name="rose_red_light">#FFF0F2</color>
+    <color name="rose_red_accent">#FF6B7A</color>
+
+    <color name="lavender">#9B59B6</color>
+    <color name="lavender_light">#F5F0FB</color>
+    <color name="lavender_accent">#C39BD3</color>
+
+    <color name="sunflower">#F39C12</color>
+    <color name="sunflower_light">#FFFBF0</color>
+    <color name="sunflower_accent">#F8C471</color>
+
+    <color name="ocean_blue">#2980B9</color>
+    <color name="ocean_blue_light">#F0F7FF</color>
+    <color name="ocean_blue_accent">#7FB3D3</color>
+
+    <color name="emerald">#27AE60</color>
+    <color name="emerald_light">#F0FBF4</color>
+    <color name="emerald_accent">#82E0AA</color>
+
+    <color name="coral">#FF6B6B</color>
+    <color name="coral_light">#FFF5F5</color>
+    <color name="coral_accent">#FFAAAA</color>
+</resources>
